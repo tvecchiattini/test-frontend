@@ -10,7 +10,7 @@ function Users() {
             <hr />
             {users.map(user => (
                 <div>
-                    <Link to={`/users/${user._id!}`}>
+                    <Link to={`/users/${user.email}`}>
                         {user.firstname} {user.lastname}
                     </Link>
                 </div>

@@ -8,8 +8,8 @@ const schema = yup.object({
     firstname: yup.string().required(),
     lastname: yup.string().required(),
     email: yup.string().email().required(),
-    country: yup.string().max(2).required(),
-    state: yup.string().max(2).required(),
+    country: yup.string().min(3).required(),
+    state: yup.string().min(3).required(),
     age: yup.number().positive().integer(),
 })
 
